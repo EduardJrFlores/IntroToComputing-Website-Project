@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <nav>
+            <a href="../index.html" style="cursor: pointer;" class="translate" data-default="Introduction" data-hover="웹사이트 소개">Introduction</a>
+            <a href="../portfolio/index.html" style="cursor: pointer;" class="translate" data-default="Portfolio" data-hover="포트폴리오">Portfolio</a>
+            <a href="https://www.facebook.com/profile.php?id=100080362497109" target="_blank" style="cursor: pointer;" class="translate" data-default="Facebook" data-hover="소셜 미디어">Facebook</a>
+    </nav>
+    <br>
+    <br>
+    <header>
+        <div class="logo">9Pandas Durd Tournament Gallery</div>
+    </header>
+
+<div class="carousel">
+    <div class="list">
+        <div class="item">
+            <img src="images/img1.png">
+            <div class="intro">
+                <div class="title">3rd PLACE🏆</div>
+                <div class="topic">ZOROBABEL</div>
+                <div class="des">
+                    1st Year End League of Legends Shuffle Tournament sponsored by sir Zoro, held at Pogz Internet Cafe last December 30, 2023. Never thought I'd place because of how long I've been out of the game.
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/img2.jpg">
+            <div class="intro">
+                <div class="title">On-going Snaps📸</div>
+                <div class="topic">ZOROBABEL</div>
+                <div class="des">
+                    A picture of me playing my first game at the Zorobabel Year End League of Legends Shuffle Tournament after a 3 month break from the game.
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/img3.jpg">
+            <div class="intro">
+                <div class="title">On-going Snaps📸</div>
+                <div class="topic">ZOROBABEL</div>
+                <div class="des">
+                    A picture of me playing the match for the 3rd place, this game was played around 1AM already because of the unexpected numbers of participants.
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/img4.jpg">
+            <div class="intro">
+                <div class="title">2nd PLACE🏆</div>
+                <div class="topic">TNC Digos</div>
+                <div class="des">
+                    1st League of Legends Tournament held by TNC DIGOS in 2019, this was a picture of me and my team before the tournament started, we unexpectedly won 2nd Place at this tournament.
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/img5.jpg">
+            <div class="intro">
+                <div class="title">CHAMPION🏆</div>
+                <div class="topic">DCG</div>
+                <div class="des">
+                    2nd ARAW ng DIGOS Cyber Game League of Legends Tournament sponsored by our Mayor, held at TNC DIGOS in 2022, we made a remarkable run through the losers bracket and became the Champion of the tournament.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrows">
+        <button id="prev" style="cursor: pointer;"><</button>
+        <button id="next" style="cursor: pointer;">></button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+<!-- js for hover change language -->
+<script>
+const translateElements = document.querySelectorAll('.translate');
+
+translateElements.forEach(element => {
+  element.addEventListener('mouseover', () => {
+    element.innerText = element.getAttribute('data-hover');
+  });
+
+  element.addEventListener('mouseout', () => {
+    element.innerText = element.getAttribute('data-default');
+  });
+});
+</script>
+
+</body>
+</html>
